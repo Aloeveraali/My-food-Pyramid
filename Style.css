@@ -1,0 +1,146 @@
+html, body {
+  height: 100%; /* Make sure the html and body take up the full viewport height */
+  margin: 0; /* Reset default margin */
+  display: flex; /* Use flexbox for positioning */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  flex-direction: column; /* Stack children vertically */
+}
+.pyramid-container {
+  position: relative; /* Set position context for absolute positioning of children */
+  width:650px;
+  height: auto;
+}
+/* Style for the pyramid levels */
+.pyramid-level {
+ display:flex;
+ justify-content: center;
+ align-items: center;
+ position:relative;
+}
+
+.controls {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.controls button,
+.controls .number 
+ {  background-color: #7e7b7b; /* Example background color */
+  color: #fffcfc; /* Button text color */
+  border: 1px solid #000000;/*  dark border around the button */
+
+  border-radius: 50%; /* This will make the button round */
+  width: 30px; /* Width of the button */
+  height: 30px; /* Height of the button, should be equal to the width for a perfect circle */
+  display: flex;
+  align-items: center;
+  justify-content: center; /*adjust the number int he controls in centre*/
+  
+  cursor: pointer;
+  margin: -50px; /* Adjust the spacing between the buttons and number */
+  font-size: 16px; /* Adjust the font size as needed */
+  line-height: 1; /* Adjust line height to help vertically center the '+' and '-' */
+  
+ 
+}
+
+
+
+.controls .minus,
+.controls .plus {
+  background-color: #7e7b7b; /* Example style */
+  border: 1px solid #000000;;
+  padding: 5px 10px; /* changes the size of the '+' or '-' */
+  cursor: pointer;
+}
+
+.controls .number {
+  margin: 0 50px; /* changles the location of the '+' '-' */
+}
+.controls.hidden {
+  display: none; /* This will hide controls  */
+}
+.pyramid-level:hover .controls {
+  display: flex; /* This will show controls on hover */
+}
+
+
+#pyramid-level-6 .controls { margin-top: 80px; } 
+#pyramid-level-5 .controls { margin-top: 35px; } 
+#pyramid-level-4 .controls { margin-top: 25px; } 
+#pyramid-level-3 .controls { margin-top: 20px; }
+#pyramid-level-2 .controls { margin-top: 15px; }
+#pyramid-level-1 .controls { margin-top: 5px; }
+
+#pyramid-level-6 {
+  border-bottom: 140px solid rgb(209, 6, 6);
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  height: 0;
+  width:0;
+  margin: auto;
+
+  
+}
+
+#pyramid-level-5 {
+  border-bottom: 100px solid rgb(211, 173, 23);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 150px;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:10px;
+}
+
+#pyramid-level-4 {
+  border-bottom: 90px solid rgb(239, 239, 74);
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  height: 0;
+  width: 260px;
+  margin-right:auto;
+  margin-left:auto;
+  margin-top:15px;
+
+}
+
+#pyramid-level-3 {
+    border-bottom: 90px solid rgb(10, 166, 250);
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 350px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#pyramid-level-2 {
+    border-bottom: 90px solid rgb(138, 99, 89);
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width:440px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#pyramid-level-1 {
+
+    border-bottom: 90px solid rgb(57, 236, 87);
+    border-left: 45px solid transparent;
+    border-right: 45px solid transparent;
+    height: 0;
+    width: 530px;
+    margin-right:auto;
+    margin-left:auto;
+}
