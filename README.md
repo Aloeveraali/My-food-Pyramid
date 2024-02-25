@@ -33,3 +33,6 @@ To use the Interactive Food Pyramid, follow these steps:
 ## License
 
 This project is open-source and available under the MIT License.
+
+
+<img width="997" alt="Screenshot 2024-02-25 at 18 54 13" src="https://github.com/Aloeveraali/My-food-Pyramid/assets/149081511/814b3fbf-b3a6-425e-afd5-caf828eb2adb">
