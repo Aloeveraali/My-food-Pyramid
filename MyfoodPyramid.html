@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Interactive Food Pyramid</title>
+</head>
+<body>
+  <div class="pyramid-container">
+    <h1 style="text-align:center;">My Food Pyramid</h1>each 
+
+    <div id="pyramid-level-6" class="pyramid-level">
+      <div class="controls hidden">
+        <button class="minus">-</button>
+        <span class="number">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+
+    <div id="pyramid-level-5" class="pyramid-level">
+      <div class="controls hidden">
+        <button class="minus">-</button>
+        <span class="number">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+    
+    <div id="pyramid-level-4" class="pyramid-level">
+      <div class="controls hidden">
+        <button class="minus">-</button>
+        <span class="number">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+
+    <div id="pyramid-level-3" class="pyramid-level">
+      <div class="controls hidden">
+        <button class="minus">-</button>
+        <span class="number">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+    <div id="pyramid-level-2" class="pyramid-level">
+      <div class="controls hidden">
+        <button class="minus">-</button>
+        <span class="number">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+
+    <div id="pyramid-level-1" class="pyramid-level">
+      <div class="controls hidden">
+        <button class="minus">-</button>
+        <span class="number">0</span>
+        <button class="plus">+</button>
+      </div>
+    </div>
+   
+    <input type="date" id="datePicker" value="2023-02-1">
+  </div>
+  <script src="Interaction.js"></script>
+
+
+  <div class="recommendation-toggle">
+    <label>
+      <input type="radio" name="recommendation" value="children" checked> Ages 1-4
+    </label>
+    <label>
+      <input type="radio" name="recommendation" value="adults"> Ages 5+
+    </label>
+  </div>
+</body>
+</html>
